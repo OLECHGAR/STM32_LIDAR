@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: OTHMAN LECHGAR, STARM, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Othman\Desktop\Lidar_NFC\MDK-ARM\Lidar.uvprojx
+Project File Date:  12/20/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Lidar'
+assembling startup_stm32f767xx.s...
+compiling Motor.c...
+../Inc/Motor.h(23): warning:  #1295-D: Deprecated declaration counter - give arg types
+  long counter();
+..\Src\Motor.c(65): warning:  #177-D: variable "C"  was declared but never referenced
+  	int Ci,C,R,Old_R = 0;
+..\Src\Motor.c(65): warning:  #177-D: variable "R"  was declared but never referenced
+  	int Ci,C,R,Old_R = 0;
+..\Src\Motor.c(65): warning:  #177-D: variable "Old_R"  was declared but never referenced
+  	int Ci,C,R,Old_R = 0;
+..\Src\Motor.c: 4 warnings, 0 errors
+compiling lcd_i2cModule.c...
+../Inc/lcd_userConf.h(42): warning:  #1-D: last line of file ends without a newline
+  /*************************END OF FILE*****************************/
+..\Src\lcd_i2cModule.c(226): warning:  #223-D: function "sprintf" declared implicitly
+  	sprintf(data_ch, ch, value);
+..\Src\lcd_i2cModule.c: 2 warnings, 0 errors
+compiling nrf24l01.c...
+compiling stm32f7xx_it.c...
+compiling stm32f7xx_hal_msp.c...
+compiling main.c...
+../Inc/Motor.h(23): warning:  #1295-D: Deprecated declaration counter - give arg types
+  long counter();
+../Src/main.c(185): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOF,OUTA_DRIVER_Pin,0); // pour le driver "1 = antihoraire
+../Src/main.c(186): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOF,OUTB_DRIVER_Pin,1); // pour le driver "1 = horaire
+../Src/main.c(155): warning:  #177-D: variable "transmissionStatus"  was declared but never referenced
+  		TM_NRF24L01_Transmit_Status_t transmissionStatus;
+../Src/main.c: 4 warnings, 0 errors
+compiling stm32f7xx_hal_i2c_ex.c...
+compiling stm32f7xx_hal_cortex.c...
+compiling stm32f7xx_hal_i2c.c...
+compiling stm32f7xx_hal_spi_ex.c...
+compiling stm32f7xx_hal_spi.c...
+compiling stm32f7xx_hal_tim.c...
+compiling stm32f7xx_hal_tim_ex.c...
+compiling stm32f7xx_hal_rcc.c...
+compiling stm32f7xx_hal_rcc_ex.c...
+compiling stm32f7xx_hal_flash.c...
+compiling stm32f7xx_hal_gpio.c...
+compiling stm32f7xx_hal_flash_ex.c...
+compiling stm32f7xx_hal_dma.c...
+compiling stm32f7xx_hal_pwr.c...
+compiling stm32f7xx_hal_dma_ex.c...
+compiling stm32f7xx_hal_pwr_ex.c...
+compiling stm32f7xx_hal_exti.c...
+compiling stm32f7xx_hal.c...
+compiling system_stm32f7xx.c...
+linking...
+Program Size: Code=18092 RO-data=632 RW-data=68 ZI-data=1868  
+FromELF: creating hex file...
+"Lidar\Lidar.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.12.0.pack
+                Keil.STM32F7xx_DFP.2.12.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Lidar
+  C:\Keil_v5\ARM\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Keil_v5\ARM\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Build Time Elapsed:  00:01:23
+</pre>
+</body>
+</html>

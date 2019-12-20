@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"rcv_nfc\startup_stm32f411xe.o"
+"rcv_nfc\main.o"
+"rcv_nfc\stm32f4xx_it.o"
+"rcv_nfc\stm32f4xx_hal_msp.o"
+"rcv_nfc\nrf24l01.o"
+"rcv_nfc\stm32f4xx_hal_spi.o"
+"rcv_nfc\stm32f4xx_hal_tim.o"
+"rcv_nfc\stm32f4xx_hal_tim_ex.o"
+"rcv_nfc\stm32f4xx_hal_uart.o"
+"rcv_nfc\stm32f4xx_hal_rcc.o"
+"rcv_nfc\stm32f4xx_hal_rcc_ex.o"
+"rcv_nfc\stm32f4xx_hal_flash.o"
+"rcv_nfc\stm32f4xx_hal_flash_ex.o"
+"rcv_nfc\stm32f4xx_hal_flash_ramfunc.o"
+"rcv_nfc\stm32f4xx_hal_gpio.o"
+"rcv_nfc\stm32f4xx_hal_dma_ex.o"
+"rcv_nfc\stm32f4xx_hal_dma.o"
+"rcv_nfc\stm32f4xx_hal_pwr.o"
+"rcv_nfc\stm32f4xx_hal_pwr_ex.o"
+"rcv_nfc\stm32f4xx_hal_cortex.o"
+"rcv_nfc\stm32f4xx_hal.o"
+"rcv_nfc\stm32f4xx_hal_exti.o"
+"rcv_nfc\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "RCV_NFC\RCV_NFC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RCV_NFC.map" -o RCV_NFC\RCV_NFC.axf
